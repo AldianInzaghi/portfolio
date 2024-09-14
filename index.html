@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Timmana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aldian Portfolio</title>
+  </head>
+  <style>
+    .opacity-0 {
+      opacity: 0;
+    }
+    .opacity-100 {
+      opacity: 1;
+    }
+    .transition-opacity {
+      transition: opacity 1s ease-in-out;
+    }
+  </style>
+  <body>
+    <!-- Header Section -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-2">
+            <a href="#home" class="block py-3 text-xl font-kanit text-teal"
+              >Aldian<span class="text-inzaghi">Inzaghi</span></a
+            >
+          </div>
+          <div class="flex items-center px-2">
+            <button
+              id="hamburger"
+              name="hamburger"
+              class="block absolute right-2 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="navbar"
+              class="hidden absolute py-3 px-3 rounded-md bg-white shadow-lg max-w-52 w-full right-2 top-12 lg:static lg:bg-transparent lg:shadow-none lg:rounded-none lg:block lg:max-w-full"
+            >
+              <ul class="block lg:flex">
+                <li class="py-2">
+                  <a
+                    href="#home"
+                    class="text-[16px] font-kanit mx-8 text-gray-500 hover:text-gray-600 hover:border-b-4 border-indigo-400 transition-all duration-150"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a
+                    href="#about"
+                    class="text-[16px] font-kanit mx-8 text-gray-500 hover:border-b-4 border-indigo-400 transition-all duration-150"
+                    >Tentang</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a
+                    href="#gallery"
+                    class="text-[16px] font-kanit mx-8 text-gray-500 hover:border-b-4 border-indigo-400 transition-all duration-150"
+                    >Project</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a
+                    href="#contact_footer"
+                    class="text-[16px] font-kanit mx-8 text-gray-500 hover:border-b-4 border-indigo-400 transition-all duration-150"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Section -->
+    <!-- Self Section -->
+    <section
+      id="home"
+      class="bg-gradient-to-b from-lgone to-lgtwo md:bg-gradient-to-r -skew-y-[5deg] -translate-y-4 lg:-skew-y-3 lg:-translate-y-14"
+    >
+      <div class="container skew-y-[5deg] -z-10 lg:skew-y-3">
+        <div class="flex flex-wrap">
+          <div class="px-2 mt-20 self-center md:w-1/2 lg:w-1/2 lg:pl-24">
+            <h1
+              class="text-[26px] text-center text-blue-950 font-semibold font-montserrat lg:text-[32px]"
+            >
+              HI, I'M ALDIAN INZAGHI.
+            </h1>
+            <p class="text-center text-[13px] leading-6 font-montserrat">
+              ~I’M A CREATIVE FRONT-END DEVELOPER WITH A STRONG FOCUS ON MOTION~
+            </p>
+            <div class="w-full mt-2 text-center">
+              <span
+                class="bg-slate-800 text-white text-xs font-inter py-2 px-4 -mr-1"
+                >Got a Project?</span
+              >
+              <!-- <a
+                href="#"
+                class="font-inter text-xs text-white relative bg-slate-600 py-2 px-6 -ml-1 before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-blue-400 before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full hover:before:bg-indigo-500"
+                >Hire Me</a
+              > -->
+              <button
+                class="relative font-inter text-xs text-white bg-slate-600 py-[7.5px] px-6 -ml-1 overflow-hidden before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-blue-400 before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full hover:before:bg-slate-500"
+              >
+                <span class="relative z-10">Hire Me</span>
+              </button>
+            </div>
+          </div>
+          <div class="w-full self-end md:w-1/2 lg:w-1/2">
+            <div class="relative mt-20 lg:pl-24">
+              <img
+                src="assets/aldian2.png"
+                class="max-w-full scale-110 lg:scale-100"
+                alt="Aldian"
+              />
+              <span
+                class="absolute bottom-0 top-16 left-12 lg:top-20 lg:left-40"
+                ><img src="assets/arrow.png" class="w-20" alt="Arrow"
+              /></span>
+              <span
+                class="absolute bottom-0 right-10 top-20 lg:top-28 lg:right-14 transform scale-x-[-1]"
+                ><img src="assets/arrow.png" class="w-20" alt="ArrowDua"
+              /></span>
+              <span class="absolute bottom-0 top-4 left-8 lg:left-36 lg:top-8"
+                ><img src="assets/html2.png" class="w-16" alt="Html"
+              /></span>
+              <span class="absolute bottom-0 top-7 right-5 lg:top-16 lg:right-8"
+                ><img src="assets/Tailwind CSS.png" class="w-16" alt="Tailwind"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-11 bg-slate-800 text-center flex justify-center items-center text-white relative z-20"
+      >
+        <p>
+          Web Designer -
+          <span class="text-orange-300">Front End Developer</span> - Husband
+        </p>
+      </div>
+    </section>
+    <!-- End Section -->
+    <!-- About Section -->
+    <section id="about" class="mt-6">
+      <div class="container">
+        <div class="flex flex-wrap md:flex-row-reverse lg:flex-row-reverse">
+          <div class="relative px-2 self-center md:w-1/2 lg:w-1/2">
+            <span
+              class="font-inter text-xs text-white bg-pink-400 py-1 px-3 rounded-[5px]"
+              >Tentang Saya</span
+            >
+            <h1 class="text-4xl py-1 font-inter font-medium">Why Hiring Me?</h1>
+            <p
+              class="text-sm text-justify font-inter mb-5 md:text-xs lg:text-base"
+            >
+              Saya merupakan seorang lulusan dari jurusan sistem komputer,
+              dimana hal yang paling banyak saya pelajari dan kerjakan adalah
+              tentang pemrograman khususnya <i>web development</i>. Potensi yang
+              saya miliki sebagai programmer adalah di bidang
+              <i>Front-End Development</i>. Saya mampu membuat tampilan website
+              dengan simpel namun elegan. Selain itu saya terkadang juga
+              mengerjakan project terkait <i>Back-End Development</i>.
+            </p>
+            <a
+              href="assets/doc/CV_ALDIAN MUHAMMAD INZAGHI.pdf"
+              class="outline outline-offset-2 outline-orange-400 text-sm py-2 px-3 rounded-[5px] text-orange-600 font-sans hover:bg-slate-200"
+              ><i class="fa-solid fa-arrow-down text-orange-600"></i> Download
+              CV</a
+            >
+            <span class="absolute bottom-0 right-0 -top-4"
+              ><img src="assets/spiral.png" class="w-10" alt="Spiral"
+            /></span>
+          </div>
+          <div class="w-full py-5 px-2 self-center md:w-1/2 lg:w-1/2">
+            <img
+              id="scroll-image"
+              src="assets/programmer.png"
+              class="max-w-full opacity-0 transition-opacity duration-1000"
+              alt="Programmer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+    <!-- Project Section -->
+    <section
+      id="gallery"
+      class="mt-6 bg-gradient-to-t from-lgone to-lgtwo py-5"
+    >
+      <div class="container">
+        <h1
+          class="text-center text-2xl font-montserrat font-semibold md:text-3xl"
+        >
+          <span class="text-slate-700">Gallery</span>
+          <span class="text-inzaghi">Project</span>
+        </h1>
+        <p
+          class="mb-5 text-center text-xs text-[#800000] font-inter md:text-sm"
+        >
+          Project di bawah ini merupakan kumpulan website yang pernah dikerjakan
+          dan desain website yang pernah dibuat
+        </p>
+        <div class="flex flex-wrap">
+          <div class="card p-3 md:w-1/2">
+            <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
+              <!-- Slider Container -->
+              <div
+                class="slider flex transition-transform duration-500 ease-out"
+              >
+                <!-- Slide 1 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Company 1.png"
+                    alt="Slide 1"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Company 2.png"
+                    alt="Slide 2"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Company 3.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 4 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Company 4.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation Buttons -->
+              <button
+                class="prevBtn absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Prev
+              </button>
+              <button
+                class="nextBtn absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Next
+              </button>
+            </div>
+            <div>
+              <p class="text-project">
+                Project di atas adalah desain
+                <i>landing page Web Company</i> dengan beberapa menu yang dibuat
+                menggunakan HTML, CSS, dan Javascript.
+              </p>
+            </div>
+          </div>
+          <div class="card p-3 md:w-1/2">
+            <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
+              <!-- Slider Container -->
+              <div
+                class="slider flex transition-transform duration-500 ease-out"
+              >
+                <!-- Slide 1 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/E-Commerce 1.png"
+                    alt="Slide 1"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/E-Commerce 2.png"
+                    alt="Slide 2"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/E-Commerce 3.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 4 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/E-Commerce 4.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 5 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/E-Commerce 5.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 6 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/E-Commerce 6.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation Buttons -->
+              <button
+                class="prevBtn absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Prev
+              </button>
+              <button
+                class="nextBtn absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Next
+              </button>
+            </div>
+            <div>
+              <p class="text-project">
+                Project di atas merupakan sebuah <i>Website E-Commerce</i> yang
+                terdiri dari beberapa menu. Project ini dibuat menggunakan HTML,
+                CSS, Javascript, dan PHP.
+              </p>
+            </div>
+          </div>
+          <div class="card px-3 md:w-1/2">
+            <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
+              <!-- Slider Container -->
+              <div
+                class="slider flex transition-transform duration-500 ease-out"
+              >
+                <!-- Slide 1 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Festival 1.png"
+                    alt="Slide 1"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Festival 2.png"
+                    alt="Slide 2"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Festival 3.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation Buttons -->
+              <button
+                class="prevBtn absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Prev
+              </button>
+              <button
+                class="nextBtn absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Next
+              </button>
+            </div>
+            <div>
+              <p class="text-project">
+                Project di atas merupakan sebuah
+                <i>landing page website</i> untuk informasi Festival Film Pendek
+                yang diadakan oleh Pemerintah Kota Batu. Project ini dibuat
+                menggunakan HTML, CSS, dan Javascript.
+              </p>
+            </div>
+          </div>
+          <div class="card p-3 md:w-1/2 md:py-0">
+            <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
+              <!-- Slider Container -->
+              <div
+                class="slider flex transition-transform duration-500 ease-out"
+              >
+                <!-- Slide 1 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Dishub 1.png"
+                    alt="Slide 1"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Dishub 2.png"
+                    alt="Slide 2"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="min-w-full">
+                  <img
+                    src="assets/Dishub 3.png"
+                    alt="Slide 3"
+                    class="w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation Buttons -->
+              <button
+                class="prevBtn absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Prev
+              </button>
+              <button
+                class="nextBtn absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2"
+              >
+                Next
+              </button>
+            </div>
+            <div>
+              <p class="text-project">
+                Project di atas merupakan sebuah
+                <i>Sistem Informasi Manajemen</i> untuk kebutuhan Dishub Kota
+                Batu. Project diatas dibuat menggunakan <i>CodeIgniter</i> dan
+                <i>MySQL</i> untuk kebutuhan <i>database</i>-nya
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-5" id="contact_footer">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-7"
+      >
+        <!-- Contact Section -->
+        <div>
+          <h2 class="text-lg font-semibold">Contact</h2>
+          <hr class="w-14 mb-2" />
+          <p class="mb-1">
+            <i class="fa-solid fa-location-dot pr-2 text-orange-400"></i>
+            Jl. Sawahan Bawah No. 4, Beji, Junrejo, Batu
+          </p>
+          <p class="mb-1">
+            <i class="fa-regular fa-envelope pr-[5px] text-orange-400"></i>
+            aldianinzaghi124@gmail.com
+          </p>
+          <p>
+            <i class="fa-solid fa-phone pr-[5px] text-orange-400"></i>
+            087770415145
+          </p>
+        </div>
+
+        <!-- Useful Links Section -->
+        <div>
+          <h2 class="text-lg font-semibold">Useful Links</h2>
+          <hr class="w-[86px] mb-2" />
+          <ul>
+            <li class="mb-1">
+              <a href="#home" class="text-gray-400 hover:text-white">Beranda</a>
+            </li>
+            <li class="mb-1">
+              <a href="#about" class="text-gray-400 hover:text-white"
+                >Tentang</a
+              >
+            </li>
+            <li class="mb-1">
+              <a href="#gallery" class="text-gray-400 hover:text-white"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a href="#contact_footer" class="text-gray-400 hover:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="mb-3">
+          <h2 class="text-lg font-semibold">Social Media</h2>
+          <hr class="w-[90px] mb-3" />
+          <div class="flex space-x-4">
+            <a
+              href="https://www.facebook.com/aldianinzaghii"
+              target="_blank"
+              class="text-gray-400 hover:text-blue-600"
+            >
+              <!-- Facebook Icon -->
+              <i class="fa-brands fa-square-facebook fa-2x"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aldian-muhammad-inzaghi-a70202208/"
+              target="_blank"
+              class="text-gray-400 hover:text-blue-700"
+            >
+              <!-- LinkedIn Icon -->
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/aldianinzaghi/"
+              target="_blank"
+              class="text-gray-400 hover:text-pink-500"
+            >
+              <!-- Instagram Icon -->
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4" />
+      <!-- Copyright Section -->
+      <div class="bg-gray-800 text-center text-gray-500 pt-4 md:pt-2">
+        <p>&copy; 2024 AldianInzaghi. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- End Section -->
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
